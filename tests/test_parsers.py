@@ -1,9 +1,7 @@
 # write tests for parsers
 
 import pytest
-from seqparser import (
-        FastaParser,
-        FastqParser)
+from seqparser import FastaParser, FastqParser
 
 def test_freebie_parser_1():
     """
@@ -50,7 +48,7 @@ def test_FastaParser():
     """
     fasta_parsed_data = FastaParser("./data/test.fa")
 
-    for seq in fasta_parsed_data
+    for seq in fasta_parsed_data:
         # make sure there are 2 elements per FastaParser object, ID and sequence
         assert len(seq) == 2
         # make sure the sequence ID contains the string "seq"
@@ -68,4 +66,4 @@ def test_FastqParser():
 
     for seq in fastq_parsed_data:
         # make sure each fastq nucleotide sequence is 100 base pairs
-        assert len(item[1]) == 100
+        assert len(seq[1]) == 100

@@ -14,23 +14,23 @@ The learning goals of this project are:
 # Assignment Tasks
 
 ## Coding Assessment -- these are placeholders for what we might ask you to do, but in this first assignment we will complete these.
-- [ ] Write a Fasta Parser (Write this code in the parse.py file) to allow parsing of a Fasta using an iterator
-- [ ] Write a Fastq Parser (Write this code in the parse.py file) to allow parsing of a Fastq file using an iterator
-- [ ] Write a Transcription Function (Write this code in the seq.py file)
-- [ ] Write a Reverse Transcription Function (Write this code in the seq.py file)
-- [ ] Complete example.py (see text of example.py) 
+- [x] Write a Fasta Parser (Write this code in the parse.py file) to allow parsing of a Fasta using an iterator
+- [x] Write a Fastq Parser (Write this code in the parse.py file) to allow parsing of a Fastq file using an iterator
+- [x] Write a Transcription Function (Write this code in the seq.py file)
+- [x] Write a Reverse Transcription Function (Write this code in the seq.py file)
+- [x] Complete example.py (see text of example.py) 
 
 
 ## Software Development Assessment 
-- [ ] Create a pip installable tool (only locally, do not submit to PyPI)
-	- [ ] Edit the `pyproject.toml` file to reflect author information
-	- [ ] Update the dependencies to include those that you use in your code
+- [x] Create a pip installable tool (only locally, do not submit to PyPI)
+	- [x] Edit the `pyproject.toml` file to reflect author information
+	- [x] Update the dependencies to include those that you use in your code
 
-- [ ] Write a unit test (in the test.py file) for
-	- [ ] Fasta Parser
-	- [ ] Fastq Parser
-	- [ ] Transcription
-	- [ ] Reverse Transcription
+- [x] Write a unit test (in the test.py file) for
+	- [x] Fasta Parser
+	- [x] Fastq Parser
+	- [x] Transcription
+	- [x] Reverse Transcription
 
 - [ ] Automate Testing with a [Github Actions](https://docs.github.com/en/actions) (This is the only one you actually have to do)
 
