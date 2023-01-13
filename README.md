@@ -248,3 +248,4 @@ def test_module_correct():
 def test_module_incorrect():
     assert add_numbers(2,3) != 0
 ```
+![](https://github.com/sllienaa/HW1-FAST-AQ-Parser/workflows/Project%20Tests/badge.svg)
