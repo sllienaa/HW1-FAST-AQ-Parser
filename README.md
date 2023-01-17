@@ -1,3 +1,5 @@
+![](https://github.com/sllienaa/HW1-FAST-AQ-Parser/workflows/Project%20Tests/badge.svg)
+
 # Project 1
 Building a FAST[AQ] Parser + Building a DNA -> RNA Transcriber
 
@@ -32,7 +34,7 @@ The learning goals of this project are:
 	- [x] Transcription
 	- [x] Reverse Transcription
 
-- [ ] Automate Testing with a [Github Actions](https://docs.github.com/en/actions) (This is the only one you actually have to do)
+- [x] Automate Testing with a [Github Actions](https://docs.github.com/en/actions) (This is the only one you actually have to do)
 
 	See blogposts below on helping set up github actions with pytest:
 	
@@ -248,4 +250,3 @@ def test_module_correct():
 def test_module_incorrect():
     assert add_numbers(2,3) != 0
 ```
-![](https://github.com/sllienaa/HW1-FAST-AQ-Parser/workflows/Project%20Tests/badge.svg)

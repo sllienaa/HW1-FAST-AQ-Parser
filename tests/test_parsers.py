@@ -46,13 +46,15 @@ def test_FastaParser():
     your FastaParser class and assert that it properly
     reads in the example Fasta File.
     """
+    # read in test data
     fasta_parsed_data = FastaParser("./data/test.fa")
 
+    # for each sequence in the test file
     for seq in fasta_parsed_data:
-        # make sure there are 2 elements per FastaParser object, ID and sequence
-        assert len(seq) == 2
+        # make sure there are 2 elements per FastaParser object (ID and sequence)
+        assert len(seq) == 2, "failed to have an ID and sequence per line"
         # make sure the sequence ID contains the string "seq"
-        assert "seq" in seq[0]
+        assert "seq" in seq[0], "test data's sequence IDs don't contain the string "seq", incorrectly read"
 
 
 def test_FastqParser():
@@ -62,8 +64,10 @@ def test_FastqParser():
     your FastqParser class and assert that it properly
     reads in the example Fastq File.
     """
+    # read in test data
     fastq_parsed_data = FastqParser("./data/test.fq")
 
+    # for each sequence in the test file
     for seq in fastq_parsed_data:
         # make sure each fastq nucleotide sequence is 100 base pairs
-        assert len(seq[1]) == 100
+        assert len(seq[1]) == 100, "fastq nucleotide sequences are not the correct length, incorrectly parsed"
