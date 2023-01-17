@@ -64,9 +64,13 @@ def test_FastqParser():
     your FastqParser class and assert that it properly
     reads in the example Fastq File.
     """
-    # read in test data
+    # read in test data, as a FastqParser object and parsed
     fastq_parsed_data = FastqParser("./data/test.fq")
+    fastq_records = [seq for seq in fastq_parsed_data]
 
+    # check the first record's sequence to see if it is being read in correctly
+    assert fastq_records[0][1] == ("TGTGGTCGTATAGTTATTGTCATAAATTACACAGAATCGCGATTCTCCGCGTCCACCAATCTTAGTGCACCACAGCATCGACCCGATTTATGACGCTGAG",
+                                   "first record's sequence is incorrect")
     # for each sequence in the test file
     for seq in fastq_parsed_data:
         # make sure each fastq nucleotide sequence is 100 base pairs
