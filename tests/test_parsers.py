@@ -54,7 +54,7 @@ def test_FastaParser():
         # make sure there are 2 elements per FastaParser object (ID and sequence)
         assert len(seq) == 2, "failed to have an ID and sequence per line"
         # make sure the sequence ID contains the string "seq"
-        assert "seq" in seq[0], "test data's sequence IDs don't contain the string "seq", incorrectly read"
+        assert "seq" in seq[0], "test data's sequence IDs don't contain the string 'seq', incorrectly read"
 
 
 def test_FastqParser():
